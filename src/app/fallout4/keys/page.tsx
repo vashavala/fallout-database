@@ -45,12 +45,12 @@ export default async function Page() {
           <td>ID</td>
           <td>NAME</td>
         </tr>
-        {keyList.map(key => (
-          <tr>
+        {/* {keyList.map(key => (
+          <tr key={}>
             <td>{key.id}</td>
             <td>{key.name}</td>
           </tr>
-        ))}
+        ))} */}
       </table>
     </main>
   )

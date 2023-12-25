@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState } from "react"
 
 export default function Page() {
@@ -51,7 +51,7 @@ export default function Page() {
   const [capCollector, setCapCollector] = useState(0)
   const [barterBobblehead, setBarterBobblehead] = useState(false)
   const [junktownVendorAmount, setJunktownVendorAmount] = useState(0)
-  const [pickedMerchantId, setPickedMerchantId] = useState('')
+  const [pickedMerchantId, setPickedMerchantId] = useState("")
   const discountMerchants = [
     { id: "ConnieAbernathy", name: "Connie Abernathy", buyModifier: 0.75, sellModifier: 1.25 },
     { id: "AlexisCombes", name: "Alexis Combes", buyModifier: 0.9, sellModifier: 1.1 },
@@ -99,15 +99,9 @@ export default function Page() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 noselect">
-      <span
-        className="transititext-primary text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-        data-te-toggle="tooltip"
-        title="Hi! I'm tooltip"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-        </svg>
-      </span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+      </svg>
       <h1 className="h1">BARTER CALCULATOR</h1>
       <div className="flex items-center">
         <label className="mr-4">Base Charisma : </label>
@@ -181,7 +175,7 @@ export default function Page() {
           {
             [0, 1, 2].map(idx => (
               <React.Fragment key={idx}>
-                <label htmlFor={`capCollector${idx}`}>{idx || 'None'}</label>
+                <label htmlFor={`capCollector${idx}`}>{idx || "None"}</label>
                 <input className="ml-2 mr-4" id={`capCollector${idx}`} type="radio" name="capCollector" value={capCollector} onChange={() => setCapCollector(idx)} defaultChecked={idx == 0} />
               </React.Fragment>
             ))
